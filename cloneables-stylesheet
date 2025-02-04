@@ -1,0 +1,267 @@
+@import url('https://fonts.cdnfonts.com/css/dico');
+@import url('https://cdn.prod.website-files.com/66144a01f890309a83b8e8d5/6685b4283906c7d8d0f5362a_Bauziet-Variable.woff2');
+@import url('https://cdn.prod.website-files.com/66144a01f890309a83b8e8d5/6685b3cd144dc56d4a56d625_RussischSans-Medium.woff2');
+@import url('https://cdn.prod.website-files.com/66144a01f890309a83b8e8d5/6685b3bd1b2d710a1de8d0e4_RussischSans-Bold.woff2');
+
+
+body {
+  background-color: #0b101e;
+  color: #ececfc;
+  font-family: Bauziet, sans-serif;
+}
+
+p { 
+    font-family: Russisch, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #a09fb8;
+}
+h1 {
+
+    font-size: clamp(2.5rem, 7cqw, 6rem);
+    line-height: 1em;
+    font-weight: 500;
+    color: #ececfc;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 1.1em;
+    font-weight: 500;
+    color: #ececfc;
+}
+
+h3 {
+    font-size: 3.5rem;
+    line-height: 1.1em;
+    font-weight: 500;
+    color: #ececfc;
+}
+
+h1 span,
+h2 span,
+h3 span {
+    font-family: Dico, sans-serif;
+    color: #ff4565;
+}
+
+header {
+    padding: 12rem 0 6rem 0;
+    align-content: center;
+    min-height: 60svh;
+    container-type: inline-size;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2rem;
+}
+
+header p {
+    max-width: 54ch;
+    font-size: 0.875rem;
+}
+
+header h1 {
+    max-width: 10ch;
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 102rem;
+    width: calc(100% - 3rem);
+}
+
+a.button,
+.card a {
+    background-color: #ff4565;
+    color: #f9f9ff;
+    text-wrap: nowrap;
+    padding: 0.75rem 1rem;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    clip-path: polygon(
+        0 4px,
+        4px 4px,
+        4px 0,
+        calc(100% - 4px) 0,
+        calc(100% - 4px) 4px,
+        100% 4px,
+        100% calc(100% - 4px),
+        calc(100% - 4px) calc(100% - 4px),
+        calc(100% - 4px) 100%,
+        4px 100%,
+        4px calc(100% - 4px),
+        0 calc(100% - 4px)
+        );
+    
+    &:hover::before { background-color: #cc3751; }
+
+    &::before {
+        content: '';
+        background-color: #ff4565;
+        position: absolute;
+        inset: 2px;
+        z-index: -1;
+        clip-path: polygon(
+            0 4px,
+            4px 4px,
+            4px 0,
+            calc(100% - 4px) 0,
+            calc(100% - 4px) 4px,
+            100% 4px,
+            100% calc(100% - 4px),
+            calc(100% - 4px) calc(100% - 4px),
+            calc(100% - 4px) 100%,
+            4px 100%,
+            4px calc(100% - 4px),
+            0 calc(100% - 4px)
+            );
+    }
+}
+
+.button[variant="secondary"] {
+    background-color: #7a7892;
+    color: #f9f9ff;
+    border: 1px solid #7a7892;
+    
+    &::before {
+        content: '';
+        background-color: #7a7892;
+        border-color: #7a7892;
+    }
+
+    &:hover::before { background-color: #46435e; }
+}
+
+.card {
+    background-color: #171c2c;
+    position: relative;
+    padding: 1.5rem 1.75rem;
+    clip-path: polygon(
+        0 16px, 
+        8px 16px,
+        8px 8px,
+        16px 8px,
+        16px 0,
+        
+        calc(100% - 16px) 0,
+        calc(100% - 16px) 8px,
+        calc(100% - 8px) 8px,
+        calc(100% - 8px) 16px,
+        100% 16px,
+        
+        100% calc(100% - 16px),
+        calc(100% - 8px) calc(100% - 16px),
+        calc(100% - 8px) calc(100% - 8px),
+        calc(100% - 16px) calc(100% - 8px),
+        calc(100% - 16px) 100%,
+        
+        16px 100%,
+        16px calc(100% - 8px),
+        8px calc(100% - 8px),
+        8px calc(100% - 16px),
+        0 calc(100% - 16px)
+        );
+}
+
+.card::before {
+    content: '';
+    background-color: #0e1425;
+    position: absolute;
+    inset: 2px;
+    z-index: -1;
+    clip-path: polygon(
+        0 16px, 
+        8px 16px,
+        8px 8px,
+        16px 8px,
+        16px 0,
+        
+        calc(100% - 16px) 0,
+        calc(100% - 16px) 8px,
+        calc(100% - 8px) 8px,
+        calc(100% - 8px) 16px,
+        100% 16px,
+        
+        100% calc(100% - 16px),
+        calc(100% - 8px) calc(100% - 16px),
+        calc(100% - 8px) calc(100% - 8px),
+        calc(100% - 16px) calc(100% - 8px),
+        calc(100% - 16px) 100%,
+        
+        16px 100%,
+        16px calc(100% - 8px),
+        8px calc(100% - 8px),
+        8px calc(100% - 16px),
+        0 calc(100% - 16px)
+        );
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+nav {
+    padding: 0.75em 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    max-width: 102rem;
+    width: calc(100% - 3rem);
+    margin-inline: auto;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav a.button {
+    font-size: 1rem;
+    align-content: center;
+    line-height: 1em;
+}
+
+.logo {
+    max-width: 20rem;
+    height: 3rem;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+        width: 3rem;
+        object-fit: cover;
+        object-position: left;
+    }
+}
+
+.grid-visual {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-width: 70rem;
+    z-index: -1;
+    object-fit: contain;
+}
