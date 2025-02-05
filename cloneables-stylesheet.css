@@ -8,7 +8,6 @@ body {
   background-color: #0b101e;
   color: #ececfc;
   font-family: Bauziet, sans-serif;
-  text-wrap: balance;
 }
 
 p { 
@@ -18,26 +17,26 @@ p {
     font-weight: 400;
     color: #a09fb8;
 }
-h1 {
 
-    font-size: clamp(2.5rem, 7cqw, 6rem);
-    line-height: 1em;
+h1, h2, h3 {
     font-weight: 500;
     color: #ececfc;
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 7cqw, 6rem);
+    line-height: 1em;
 }
 
 h2 {
     font-size: 4rem;
     line-height: 1.1em;
-    font-weight: 500;
-    color: #ececfc;
 }
 
 h3 {
     font-size: 3.5rem;
     line-height: 1.1em;
-    font-weight: 500;
-    color: #ececfc;
 }
 
 h1 span,
