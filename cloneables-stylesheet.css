@@ -74,7 +74,11 @@ header h1 {
 .container {
     margin-inline: auto;
     max-width: 90rem;
-    width: calc(100% - 3rem);
+    width: calc(100% - 5rem);
+
+    @media screen and (max-width: 991px) {
+      width: calc(100% - 1.5rem);
+    }
 }
 
 a.button,
