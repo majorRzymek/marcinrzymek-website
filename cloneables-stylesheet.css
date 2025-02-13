@@ -18,6 +18,10 @@ p {
     color: #a09fb8;
 }
 
+a {
+  font-family: Bauziet, sans-serif;
+}
+
 h1, h2, h3 {
     font-weight: 500;
     color: #ececfc;
